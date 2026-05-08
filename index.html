@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BSM Cruise Dashboard • Indonesia</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <!-- Gotham Pro approximation using system fonts + fallback -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .bsm-red { color: #E42624; }
+    .accent-red { background-color: #E42624; }
+  </style>
+</head>
+<body class="bg-white text-[#0A2540] min-h-screen">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-72 bg-white border-r border-gray-200 p-6 flex flex-col shadow-sm">
+      <div class="flex items-center gap-3 mb-12">
+        <div class="w-11 h-11 bg-[#E42624] rounded-2xl flex items-center justify-center text-white font-bold text-2xl shadow">B</div>
+        <div>
+          <h1 class="font-bold text-2xl tracking-tight text-[#0A2540]">BSM CRUISE</h1>
+          <p class="text-xs text-gray-500 -mt-1">INDONESIA OPERATIONS</p>
+        </div>
+      </div>
+
+      <nav class="space-y-1 flex-1">
+        <a href="#" class="flex items-center gap-3 px-5 py-3 bg-[#E42624] text-white rounded-2xl font-medium"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#" class="flex items-center gap-3 px-5 py-3 hover:bg-gray-100 rounded-2xl text-[#0A2540]"><i class="fas fa-users"></i> Applicants</a>
+        <a href="#" class="flex items-center gap-3 px-5 py-3 hover:bg-gray-100 rounded-2xl text-[#0A2540]"><i class="fas fa-ship"></i> Open Positions</a>
+        <a href="#" class="flex items-center gap-3 px-5 py-3 hover:bg-gray-100 rounded-2xl text-[#0A2540]"><i class="fas fa-chart-bar"></i> Analytics</a>
+        <a href="#" class="flex items-center gap-3 px-5 py-3 hover:bg-gray-100 rounded-2xl text-[#0A2540]"><i class="fas fa-calendar"></i> Interviews</a>
+      </nav>
+
+      <div class="mt-auto pt-6 border-t border-gray-200">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-gray-200 rounded-full"></div>
+          <div>
+            <p class="font-medium text-[#0A2540]">Admin Bali</p>
+            <p class="text-xs text-gray-500">Operations Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1 overflow-auto bg-gray-50">
+      <header class="bg-white border-b border-gray-200 px-8 py-6 flex justify-between items-center shadow-sm">
+        <h2 class="text-3xl font-semibold text-[#0A2540]">Operations Dashboard</h2>
+        <div class="flex items-center gap-6">
+          <div class="text-right">
+            <p class="font-medium text-[#0A2540]">Welcome back, Markus</p>
+            <p class="text-xs text-gray-500">May 8, 2026</p>
+          </div>
+        </div>
+      </header>
+
+      <div class="p-8">
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <div class="bg-white border border-gray-200 rounded-3xl p-7 hover:shadow-md transition-all">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-gray-500 text-sm">Total Applicants</p>
+                <p class="text-5xl font-bold mt-3 text-[#0A2540]">1,847</p>
+              </div>
+              <i class="fas fa-users text-5xl bsm-red"></i>
+            </div>
+            <p class="text-emerald-600 text-sm mt-4 flex items-center gap-1"><i class="fas fa-arrow-up"></i> +24% from last month</p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-3xl p-7 hover:shadow-md transition-all">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-gray-500 text-sm">Hired This Month</p>
+                <p class="text-5xl font-bold mt-3 text-[#0A2540]">87</p>
+              </div>
+              <i class="fas fa-user-check text-5xl bsm-red"></i>
+            </div>
+            <p class="text-emerald-600 text-sm mt-4 flex items-center gap-1"><i class="fas fa-arrow-up"></i> +12 this week</p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-3xl p-7 hover:shadow-md transition-all">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-gray-500 text-sm">Open Positions</p>
+                <p class="text-5xl font-bold mt-3 text-[#0A2540]">42</p>
+              </div>
+              <i class="fas fa-ship text-5xl bsm-red"></i>
+            </div>
+            <p class="text-amber-600 text-sm mt-4">14 urgent</p>
+          </div>
+
+          <div class="bg-white border border-gray-200 rounded-3xl p-7 hover:shadow-md transition-all">
+            <div class="flex justify-between items-start">
+              <div>
+                <p class="text-gray-500 text-sm">Avg. Processing</p>
+                <p class="text-5xl font-bold mt-3 text-[#0A2540]">18</p>
+                <p class="text-sm text-gray-400">days</p>
+              </div>
+              <i class="fas fa-clock text-5xl bsm-red"></i>
+            </div>
+            <p class="text-emerald-600 text-sm mt-4">-3 days improved</p>
+          </div>
+        </div>
+
+        <!-- Charts & Tables -->
+        <div class="grid grid-cols-1 lg:grid-cols-7 gap-6">
+          <div class="lg:col-span-4 bg-white border border-gray-200 rounded-3xl p-7">
+            <h3 class="font-semibold text-lg mb-6 text-[#0A2540]">Application Trend (Last 30 Days)</h3>
+            <div class="h-80 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-500 border border-dashed border-gray-300">
+              Interactive Chart Area (Add Chart.js here)
+            </div>
+          </div>
+
+          <div class="lg:col-span-3 bg-white border border-gray-200 rounded-3xl p-7">
+            <h3 class="font-semibold text-lg mb-6 text-[#0A2540]">Recent Applications</h3>
+            <div class="space-y-5 text-sm">
+              <div class="flex justify-between items-center py-2 border-b">
+                <div>
+                  <p class="font-medium text-[#0A2540]">Maria Susanti</p>
+                  <p class="text-gray-500">Housekeeping • Bali</p>
+                </div>
+                <span class="px-4 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-full font-medium">Hired</span>
+              </div>
+              <!-- More rows -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
